@@ -77,7 +77,7 @@ dotnet sln Agendamentos.slnx add Agendamentos.Tests/Agendamentos.Tests.csproj
 - Se precisar do meu código para este commit, basta executar no repositório deste curso:
 
 ```bash
-git checkout <hash>
+git checkout f1fbe67
 ```
 
 E para voltar para a última versão, basta executar:
