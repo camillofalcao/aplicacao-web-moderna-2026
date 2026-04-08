@@ -751,7 +751,7 @@ public class ListaPaginada<T>
 - Se precisar do meu código para este commit, basta executar no repositório deste curso:
 
 ```bash
-git checkout <hash>
+git checkout 9d68b4d
 ```
 
 E para voltar para a última versão, basta executar:

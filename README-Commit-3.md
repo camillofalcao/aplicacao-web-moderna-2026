@@ -511,8 +511,14 @@ public static class Erros
 
 ### ✅ COMMIT 3 — Interfaces e definições de erros
 
+- Se precisar do meu código para este commit, basta executar no repositório deste curso:
+
 ```bash
-git add -A
-git commit -m "Adicionadas interfaces de repositório e definições de erros"
-git log --oneline -1
+git checkout <hash>
+```
+
+E para voltar para a última versão, basta executar:
+
+```bash
+git checkout main
 ```
