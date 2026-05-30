@@ -13,7 +13,7 @@ Nesta parte vamos:
 3. Criar testes para os Validators (que AINDA NÃO existem — vão falhar)
 4. Implementar os Use Cases e Validators para fazer TODOS os testes passarem
 
-### 4.1 Criar o projeto de testes
+## 4.1 Criar o projeto de testes
 
 O projeto de testes ja foi criado na Parte 1, mas se por acaso voce estiver
 comecando por aqui, execute os comandos abaixo:
@@ -25,7 +25,7 @@ dotnet sln Agendamentos.slnx add Agendamentos.Tests/Agendamentos.Tests.csproj
 dotnet add Agendamentos.Tests/Agendamentos.Tests.csproj reference Agendamentos.Entities/Agendamentos.Entities.csproj
 ```
 
-### 4.2a Instalar pacotes de teste
+## 4.2a Instalar pacotes de teste
 
 ```bash
 cd Agendamentos.Tests
@@ -35,7 +35,7 @@ dotnet add package coverlet.collector --version 6.0.4
 cd ..
 ```
 
-### 4.2b Instalações adicionais
+## 4.2b Instalações adicionais
 
 ```bash
 cd Agendamentos.Entities
@@ -51,7 +51,7 @@ cd ..
 
 ---
 
-### 4.3 Testes dos Models (4 arquivos)
+## 4.3 Testes dos Models (4 arquivos)
 
 Os Models ja existem (foram criados na Parte 1). Portanto, estes testes devem
 passar imediatamente. A ideia e validar que a logica encapsulada nas entidades
@@ -63,7 +63,7 @@ Crie a pasta para os testes de Models:
 mkdir -p Agendamentos.Tests/Models
 ```
 
-#### 4.3.1 UsuarioTests.cs
+### 4.3.1 UsuarioTests.cs
 
 Testes para a entidade Usuario: hashing de senha com BCrypt, verificacao de senha
 e valores padrao.
@@ -125,7 +125,7 @@ public class UsuarioTests
 }
 ```
 
-#### 4.3.2 AgendamentoTests.cs
+### 4.3.2 AgendamentoTests.cs
 
 Testes para a entidade Agendamento: transicao de estado, permissoes e cancelamento.
 
@@ -198,7 +198,7 @@ public class AgendamentoTests
 }
 ```
 
-#### 4.3.3 HorarioDisponivelTests.cs
+### 4.3.3 HorarioDisponivelTests.cs
 
 Testes para o metodo `Contem()` da entidade HorarioDisponivel.
 
@@ -305,7 +305,7 @@ public class HorarioDisponivelTests
 }
 ```
 
-#### 4.3.4 RefreshTokenTests.cs
+### 4.3.4 RefreshTokenTests.cs
 
 Testes para as propriedades derivadas (Expirado, Revogado, Ativo), o metodo Revogar()
 e o metodo estatico ComputarHash() da entidade RefreshToken.
@@ -489,7 +489,7 @@ public class RefreshTokenTests
 }
 ```
 
-### 4.4 Executar os testes de Models
+## 4.4 Executar os testes de Models
 
 Como os Models ja foram implementados na Parte 1, todos os testes devem passar:
 
