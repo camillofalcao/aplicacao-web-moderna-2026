@@ -26,6 +26,9 @@ completo funcionando.
 - [Pré-requisitos](#-pré-requisitos)
 - [Arquitetura do Projeto](#-arquitetura-do-projeto)
 - [Commit 1 — Criando a Estrutura](/README-Commit-1.md)
+- [Commit 2 — Entidades do Domínio (Models, Enums)](/README-Commit-2.md)
+- [Commit 3 — Interfaces de Repositório e Definições de Erros](/README-Commit-3.md)
+- [Commit 4 — Testes unitários para os Models (TDD)](/README-Commit-4.md)
 
 ---
 

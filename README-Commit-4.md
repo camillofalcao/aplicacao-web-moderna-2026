@@ -25,7 +25,7 @@ dotnet sln Agendamentos.slnx add Agendamentos.Tests/Agendamentos.Tests.csproj
 dotnet add Agendamentos.Tests/Agendamentos.Tests.csproj reference Agendamentos.Entities/Agendamentos.Entities.csproj
 ```
 
-### 3.2 Instalar pacotes de teste
+### 3.2a Instalar pacotes de teste
 
 ```bash
 cd Agendamentos.Tests
@@ -35,10 +35,19 @@ dotnet add package coverlet.collector --version 6.0.4
 cd ..
 ```
 
+### 3.2b Instalações adicionais
+
+```bash
+cd Agendamentos.Entities
+dotnet add package ErrorOr --version 2.1.1
+cd ..
+```
+
 **Pacotes utilizados:**
 - **FluentAssertions** — assertions legíveis: `resultado.Should().BeTrue()`
 - **NSubstitute** — mocks (substitutos) para interfaces: `Substitute.For<IRepo>()`
 - **coverlet.collector** — coleta metricas de cobertura de codigo
+- **ErrorOr** — substitui o lançamento de exceções
 
 ---
 
@@ -314,6 +323,7 @@ e o metodo estatico ComputarHash() da entidade RefreshToken.
 // ============================================================================
 
 using Agendamentos.Entities.Models;
+using Agendamentos.Entities.Models.Auth;
 using FluentAssertions;
 
 namespace Agendamentos.Tests.Models;
@@ -484,7 +494,6 @@ public class RefreshTokenTests
 Como os Models ja foram implementados na Parte 1, todos os testes devem passar:
 
 ```bash
-cd Agendamentos
 dotnet test Agendamentos.Tests --filter "FullyQualifiedName~Models" --verbosity normal
 ```
 
@@ -492,10 +501,16 @@ Resultado esperado: **Todos os testes passam (verde).**
 
 ### COMMIT 4 — Testes unitarios para Models
 
+- Se precisar do meu código para este commit, basta executar no repositório deste curso:
+
 ```bash
-git add -A
-git commit -m "Adicionados testes unitários para Models (Usuario, Agendamento, HorarioDisponivel, RefreshToken)"
-git log --oneline -1
+git checkout d77ee5c
+```
+
+E para voltar para a última versão, basta executar:
+
+```bash
+git checkout main
 ```
 
 ---
