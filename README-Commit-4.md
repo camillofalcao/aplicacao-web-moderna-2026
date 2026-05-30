@@ -504,7 +504,7 @@ Resultado esperado: **Todos os testes passam (verde).**
 - Se precisar do meu código para este commit, basta executar no repositório deste curso:
 
 ```bash
-git checkout d77ee5c
+git checkout commit-4
 ```
 
 E para voltar para a última versão, basta executar:

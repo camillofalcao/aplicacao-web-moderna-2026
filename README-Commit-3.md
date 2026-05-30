@@ -514,7 +514,7 @@ public static class Erros
 - Se precisar do meu código para este commit, basta executar no repositório deste curso:
 
 ```bash
-git checkout 02ed537
+git checkout commit-3
 ```
 
 E para voltar para a última versão, basta executar:
